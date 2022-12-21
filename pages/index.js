@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import First from "../components/first"
+import styles from "../styles/index.module.css"
+import Last from "../components/last";
 
 //dark is the color for black bg
 //lightBlue is the color for the Arduous Carifer
@@ -9,5 +12,12 @@ import Image from "next/image";
 //~sid
 
 export default function Home() {
-  return <div className="font-bold">Hello</div>;
+  return (
+    <div className="bg-dark">
+      <div>yoo</div>
+      <First />
+      <br /><br />
+      <Last />
+    </div>
+  );
 }
