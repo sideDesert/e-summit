@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from 'swiper';
+import { useEffect } from 'react';
 
 import "swiper/css";
 import 'swiper/css/pagination'
@@ -22,7 +23,7 @@ function Gallery() {
     <Swiper
       spaceBetween={50}
       effect={'coverflow'}
-      slidesPerView={'auto'}
+      slidesPerView={1}
       centeredSlides={true}
       grabCursor={true}
       loop={true}
@@ -34,6 +35,14 @@ function Gallery() {
         modifier: 1,
       }}
       pagination={{clickable: true}}
+      breakpoints = {
+        {
+          600:{
+            slidesPerView: 3,
+            spaceBetween :10
+          }
+        }
+      }
       modules={[EffectCoverflow, Pagination]}
       className='py-[3rem]'
     >

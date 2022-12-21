@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+.swiper{
+
+    padding: 1rem 2rem 1rem 2rem;
+}
+
 @media screen and (min-width: 600px) {
     .swiper{
         padding: 3rem 0 3rem 0 !important;
@@ -11,6 +16,6 @@
 
 .swiper-slide{
     width: 23rem;
-    height: 17rem !important;
+    height: 20rem !important;
     flex-grow: 1;
 }
