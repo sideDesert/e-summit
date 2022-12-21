@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import First from "../components/first"
-import styles from "../styles/index.module.css"
+import First from "../components/first";
+import styles from "../styles/index.module.css";
 import Last from "../components/last";
+import Events from "../components/Events.js/Events";
+import Speakers from "../components/Events.js/Speakers";
 
 //dark is the color for black bg
 //lightBlue is the color for the Arduous Carifer
@@ -14,9 +16,9 @@ import Last from "../components/last";
 export default function Home() {
   return (
     <div className="bg-dark">
-      <div>yoo</div>
       <First />
-      <br /><br />
+      <Events />
+      <Speakers></Speakers>
       <Last />
     </div>
   );
